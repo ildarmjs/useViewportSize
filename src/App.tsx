@@ -6,7 +6,7 @@ function App() {
 
 	return (
 		<>
-			Width: {width}, height: {height}
+			Width: {width}, Height: {height}
 		</>
 	)
 }
