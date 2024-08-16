@@ -1,4 +1,5 @@
-import { useState } from 'react';
+
+import React from 'react';
 import { useWindowEvent } from './useWindowEvent ';
 
 type ViewportSize = {
@@ -7,7 +8,7 @@ type ViewportSize = {
 };
 
 const useViewportSize = (): ViewportSize => {
-	const [size, setSize] = useState({
+	const [size, setSize] = React.useState({
 		width: window.innerWidth,
 		height: window.innerHeight,
 	});
